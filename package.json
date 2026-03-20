@@ -22,14 +22,14 @@
     "ej04": "node src/ej04.js",
     "ej05": "node src/ej05.js",
     "ej06": "node src/ej06.js",
-    "ej07": "node src/ej07.js"
+    "ej07": "node src/ej07.js",
+    "ej08": "node src/ej08.js"
   },
   "dependencies": {
-
-    "currency-map-country": "^1.0.12"
-
+    "currency-map-country": "^1.0.12",
+    "axios": "^1.6.8"
   },
-  "dependencies": {
+  "devDependencies": {}
     "currency-map-country": "^1.0.12"
   }
 }
