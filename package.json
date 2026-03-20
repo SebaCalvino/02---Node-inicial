@@ -1,0 +1,21 @@
+{
+  "name": "02---node-inicial",
+  "version": "1.0.0",
+  "description": "Primer proyecto Node",
+  "homepage": "https://github.com/SebaCalvino/02---Node-inicial#readme",
+  "bugs": {
+    "url": "https://github.com/SebaCalvino/02---Node-inicial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebaCalvino/02---Node-inicial.git"
+  },
+  "license": "ISC",
+  "author": "Calvino & Gartenkrot",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {}
+}
