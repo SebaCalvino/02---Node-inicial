@@ -1,18 +1,17 @@
-import { getCountry } from 'currency-map-country';
-import { getCurrency } from 'currency-map-country';
+import {getCountryByAbbreviation, getCurrencyAbbreviation} from 'country-currency-map';
 let monedaDelPais, codigoPais;
 
 codigoPais = 'AR';
-monedaDelPais = obtenerMoneda(codigoPais);
+monedaDelPais = await obtenerMoneda(codigoPais);
 console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
 codigoPais = 'UZA';
-monedaDelPais = obtenerMoneda(codigoPais);
+monedaDelPais = await obtenerMoneda(codigoPais);
 console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
 
-function obtenerMoneda(codigoPais) {
-let pais = getCountry(codigoPais);
-    if (pais) {
-        return getCurrency(pais);
+async function obtenerMoneda(codigoPais) {
+let pais = await getCountryByAbbreviation(codigoPais);
+    if (pais != null) {
+        return await getCurrencyAbbreviation(pais);
     } else {
         return null;
     }
